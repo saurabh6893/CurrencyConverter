@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(90deg, #000000 0%, #04619f 74%);
+}
+
+.boxA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxA h1 {
+  font-size: 70px;
+  font-family: 'Bebas Neue', cursive;
+  margin: 20px;
+}
+
+.boxA .imgSvg {
+  width: 200px;
+  height: 200px;
+}
+
+/* ------------------topSection------------------  */
+.btn {
+  background-color: pink;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 12px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+  font-size: 16px;
+  background: transparent;
+  background-image: url('Attachments/down-arrow-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-size: 12px auto, 100%;
+  background-position: left 45px top 10px, 0, 0;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
