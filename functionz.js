@@ -23,6 +23,14 @@ function grab() {
     .then((data) => {
       const theRate = data.conversion_rates[currencyValueB]
       rate.innerText = `1 ${currencyValueA}=${theRate} ${currencyValueB}`
+      amtB.value = (amtA.value * theRate).toFixed(2)
+
+      swap.addEventListener('click', () => {
+        const temp = currencyA.value
+        currencyA.value = currencyB.value
+        currencyB.value = temp
+        grab()
+      })
     })
 }
 
