@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,10 +8,15 @@
 
 body {
   max-height: 80vh;
-  margin: 2%;
+  padding: 3%;
+  width: 95vw;
+  height: 95vh;
   display: flex;
   flex-direction: row;
-  background-color: aliceblue;
+  background-color: #21d190;
+  background-image: linear-gradient(0deg, #0689cb 50%, #21d190 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cardx {
   display: flex;
@@ -18,22 +24,23 @@ body {
   color: black;
   align-items: center;
   flex-direction: column;
-  background-color: #d387ab;
-  background-image: linear-gradient(225deg, #f4c2c2 2%, #5d2027 74%);
+  background-color: #21d190;
+  background-image: linear-gradient(325deg, #21d190 50%, #0689cb 50%);
   width: 35%;
-  border-radius: 70% 0 0 10%;
+  border-radius: 10%;
   height: 90vh;
   border: solid black;
-  border-width: 20px 5px 2px 10px;
+  border-width: 20px 5px 20px 20px;
 }
 
 .cardy {
-  padding: 10%;
+  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 70px;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 .boxA {
   display: flex;
@@ -56,11 +63,22 @@ body {
 
 /* ------------------topSection------------------  */
 .btn {
-  background-color: pink;
+  background-color: #3f0d12;
+  background-image: linear-gradient(0deg, #3f0d12 50%, #860014 64%);
+  color: White;
+  border: 1px solid grey;
+  box-shadow: 5px 0 15px 5px #004f32;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 30px;
-  padding: 5px 12px;
+  padding: 7px 20px;
+  transition: 0.5s all ease-in-out;
+}
+
+.btn:hover {
+  padding: 8px 30px;
+  border: 1.5px solid rgb(111, 110, 110);
+  border-radius: 10px;
 }
 
 .currency {
@@ -88,6 +106,7 @@ body {
 
 .currency input {
   border: 0;
+  width: 50%;
   background: transparent;
   font-size: 30px;
   text-align: right;
